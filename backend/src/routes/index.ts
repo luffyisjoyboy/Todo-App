@@ -6,6 +6,6 @@ const accountsRouterConnector = require("./accounts")
 
 indexRouter.use("/accounts", accountsRouterConnector)
 indexRouter.use("/users", usersRouterConnector)
-indexExpress.use("/todos", todosRouterConnector)
+indexRouter.use("/todos", todosRouterConnector)
 
 module.exports = indexRouter
